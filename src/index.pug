@@ -1,0 +1,111 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+    body
+        include pug/svg.pug
+        div.container-wrap
+            div.row.personal-info
+                div.medium-3.columns
+                    img.avatarImg(src="images/avatar.png" alt="Image Title")
+
+                div.medium-9.columns
+                    form(method='POST' action='/register')
+                        div.form-group
+                            label#lbl-name(for='name') Имя:
+                            input#name.form-control(type='text', name='name')
+                        div.form-group
+                            label#lbl-date(for='date') Дата рождения:
+                            input#date.form-control(type='text', name='date')
+                        div.form-group
+                            label#lbl-city(for='city') Город:
+                            input#city.form-control(type='text', name='city')
+                        div.form-group
+                            label#lbl-tel(for='tel') Контактные данные:
+                            input#tel.form-control(type='text', name='tel')
+
+                    img.stempel-img(src="images/approved.png" alt="Stempel")
+            hr.docs-component
+            div.row.skills
+                div.medium-12.columns
+                    p Навыки
+                fieldset.medium-3.small-6.columns
+                    label(for='html5')
+                        input#html5(type='checkbox')
+                        |html5
+                    label(for='css3')
+                        input#css3(type='checkbox')
+                        |css3
+                    label(for='bem')
+                        input#bem(type='checkbox')
+                        |бэм
+                fieldset.medium-3.small-6.columns
+                    label(for='Sass')
+                        input#Sass(type='checkbox')
+                        |sass
+                    label(for='less')
+                        input#less(type='checkbox')
+                        |less
+                    label(for='gulp')
+                        input#gulp(type='checkbox')
+                        |gulp
+
+                fieldset.medium-3.small-6.columns
+                    label(for='vanillajs')
+                        input#vanillajs(type='checkbox')
+                        |vanillajs
+                    label(for='angular')
+                        input#angular(type='checkbox')
+                        |angular
+                    label(for='jquery')
+                        input#jquery(type='checkbox')
+                        |jquery
+
+                fieldset.medium-3.small-6.columns
+                    label(for='git')
+                        input#git(type='checkbox')
+                        |git
+                    label(for='foundation')
+                        input#foundation(type='checkbox')
+                        |foundation
+                    label(for='bootstrap')
+                        input#bootstrap(type='checkbox')
+                        |bootstrap
+            hr.docs-component
+            div.row.js-scale
+                div.medium-12.columns
+                    div.medium-6.columns
+                        div.indicator-wrap
+                            img.yellowsec(src="images/yellow-sector.png" alt="yellow")
+                            img.greensec(src="images/green-sector.png" alt="green")
+                            img.bluesec(src="images/blue-sector.png" alt="blue")
+                            img.pointer(src="images/pointer.png" alt="pointer")
+
+
+                    div.medium-6.columns
+                        p Мой уровень владения
+                        span JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+include pug/scripts.pug
