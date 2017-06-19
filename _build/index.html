@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Awesome Description Here">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Markup | Главная</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flat/blue.css">
+  </head>
+  <body>
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden;"><!-- inject:svg -->
+<!-- endinject -->
+    </div>
+    <div class="container-wrap">
+      <div class="row personal-info">
+        <div class="medium-3 columns"><img class="avatarImg" src="images/avatar.png" alt="Image Title"></div>
+        <div class="medium-9 columns">
+          <form method="POST" action="/register">
+            <div class="form-group">
+              <label id="lbl-name" for="name">Имя:</label>
+              <input class="form-control" id="name" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label id="lbl-date" for="date">Дата рождения:</label>
+              <input class="form-control" id="date" type="text" name="date">
+            </div>
+            <div class="form-group">
+              <label id="lbl-city" for="city">Город:</label>
+              <input class="form-control" id="city" type="text" name="city">
+            </div>
+            <div class="form-group">
+              <label id="lbl-tel" for="tel">Контактные данные:</label>
+              <input class="form-control" id="tel" type="text" name="tel">
+            </div>
+          </form><img class="stempel-img" src="images/approved.png" alt="Stempel">
+        </div>
+      </div>
+      <hr class="docs-component">
+      <div class="row skills">
+        <div class="medium-12 columns">
+          <p>Навыки</p>
+        </div>
+        <fieldset class="medium-3 small-6 columns">
+          <label for="html5">
+            <input id="html5" type="checkbox">html5
+          </label>
+          <label for="css3">
+            <input id="css3" type="checkbox">css3
+          </label>
+          <label for="bem">
+            <input id="bem" type="checkbox">бэм
+          </label>
+        </fieldset>
+        <fieldset class="medium-3 small-6 columns">
+          <label for="Sass">
+            <input id="Sass" type="checkbox">sass
+          </label>
+          <label for="less">
+            <input id="less" type="checkbox">less
+          </label>
+          <label for="gulp">
+            <input id="gulp" type="checkbox">gulp
+          </label>
+        </fieldset>
+        <fieldset class="medium-3 small-6 columns">
+          <label for="vanillajs">
+            <input id="vanillajs" type="checkbox">vanillajs
+          </label>
+          <label for="angular">
+            <input id="angular" type="checkbox">angular
+          </label>
+          <label for="jquery">
+            <input id="jquery" type="checkbox">jquery
+          </label>
+        </fieldset>
+        <fieldset class="medium-3 small-6 columns">
+          <label for="git">
+            <input id="git" type="checkbox">git
+          </label>
+          <label for="foundation">
+            <input id="foundation" type="checkbox">foundation
+          </label>
+          <label for="bootstrap">
+            <input id="bootstrap" type="checkbox">bootstrap
+          </label>
+        </fieldset>
+      </div>
+      <hr class="docs-component">
+      <div class="row js-scale">
+        <div class="medium-12 columns">
+          <div class="medium-6 columns">
+            <div class="indicator-wrap"><img class="yellowsec" src="images/yellow-sector.png" alt="yellow"><img class="greensec" src="images/green-sector.png" alt="green"><img class="bluesec" src="images/blue-sector.png" alt="blue"><img class="pointer" id="pointer" src="images/pointer.png" alt="pointer"></div>
+          </div>
+          <div class="medium-6 columns">
+            <p class="my-level">Мой уровень владения</p><span>JavaScript</span>
+            <div id="counter"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/icheck.js"></script>
+  </body>
+</html>

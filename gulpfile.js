@@ -25,6 +25,7 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
+        cssICheck: 'build/css/flat',
         img: 'build/images/',
         fonts: 'build/fonts/'
     },
@@ -36,7 +37,10 @@ var path = {
         img: 'src/images/**/*.*',
         pngSprite: 'src/sprite/png/',
         svgSprite: 'src/sprite/svg/**/*.svg',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        cssIcheck: 'bower_components/jquery-icheck/skins/flat/**/*.*',
+        jsIcheck: 'bower_components/jquery-icheck/*.js'
+
     },
     watch: {
         pug: 'src/**/*.pug',
@@ -84,6 +88,8 @@ gulp.task('vendorsJs:build', function () {
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.stream());
+    gulp.src(path.src.jsIcheck)
+        .pipe(gulp.dest(path.build.js))
 });
 
 gulp.task('style:build', function () {
@@ -96,6 +102,9 @@ gulp.task('style:build', function () {
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
+    gulp.src(path.src.cssIcheck)
+        .pipe(gulp.dest(path.build.cssICheck))
+
 });
 
 gulp.task('sassLint', function () {
@@ -127,15 +136,15 @@ gulp.task('png-sprite', function () {
     var spriteData =
         gulp.src(path.src.pngSprite + '*.png')
             .pipe(spritesmith({
-              retinaSrcFilter: path.src.pngSprite + '*-2x.png',
-              imgName: 'sprite.png',
-              retinaImgName: 'sprite-2x.png',
-              cssName: '_png-sprite.sass',
-              cssTemplate: 'sass.template.mustache',
-              cssVarMap: function (sprite) {
-                sprite.name = sprite.name;
-                sprite.image2x = 'sprite-2x.png';
-              }
+                retinaSrcFilter: path.src.pngSprite + '*-2x.png',
+                imgName: 'sprite.png',
+                retinaImgName: 'sprite-2x.png',
+                cssName: '_png-sprite.sass',
+                cssTemplate: 'sass.template.mustache',
+                cssVarMap: function (sprite) {
+                    sprite.name = sprite.name;
+                    sprite.image2x = 'sprite-2x.png';
+                }
             }));
 
     spriteData.img.pipe(gulp.dest('src/images/'));

@@ -12,28 +12,22 @@ $(document).ready(function () {
         }
     }
 
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_flat'
-        });
-
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_flat-blue'
-        });
-
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_flat icheckbox_flat-blue'
+    });
     var counterContainer = $('#counter');
     var maxCount = 1000;
-
-
     var angle = -35;
-    var div = document.getElementById('div');
+    var pointer = document.getElementById('pointer');
+
     function countNumberInterval() {
-        var i = 900;
-        var timerId = setInterval(function() {
-            counterContainer.text(i);
-            angle +=2;
-            div.style.transform = 'rotate(' + angle + 'deg)';
-            if (i == maxCount) clearInterval(timerId);
-            i++;
+        var minCount = 900;
+        var timerId = setInterval(function () {
+            counterContainer.text(minCount);
+            angle += 2;
+            pointer.style.transform = 'rotate(' + angle + 'deg)';
+            if (minCount == maxCount) clearInterval(timerId);
+            minCount++;
 
         }, 100);
     }
@@ -42,6 +36,25 @@ $(document).ready(function () {
 
 
 });
+
+// var counterContainer = $('#counter');
+// var maxCount = 1000;
+// var angle = -35;
+// var div = document.getElementById('div');
+//
+// function countNumberInterval() {
+//     var i = 900;
+//     var timerId = setInterval(function () {
+//         counterContainer.text(i);
+//         angle += 2;
+//         div.style.transform = 'rotate(' + angle + 'deg)';
+//         if (i == maxCount) clearInterval(timerId);
+//         i++;
+//
+//     }, 100);
+// }
+//
+// countNumberInterval();
 
 
 

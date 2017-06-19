@@ -17,16 +17,16 @@ html
                 div.medium-9.columns
                     form(method='POST' action='/register')
                         div.form-group
-                            label#lbl-name(for='name') Имя:
+                            label#lbl-name(for='name') Кристина
                             input#name.form-control(type='text', name='name')
                         div.form-group
-                            label#lbl-date(for='date') Дата рождения:
+                            label#lbl-date(for='date') 12.01.1990
                             input#date.form-control(type='text', name='date')
                         div.form-group
-                            label#lbl-city(for='city') Город:
+                            label#lbl-city(for='city') Бар
                             input#city.form-control(type='text', name='city')
                         div.form-group
-                            label#lbl-tel(for='tel') Контактные данные:
+                            label#lbl-tel(for='tel') +38269616664
                             input#tel.form-control(type='text', name='tel')
 
                     img.stempel-img(src="images/approved.png" alt="Stempel")
@@ -36,17 +36,17 @@ html
                     p Навыки
                 fieldset.medium-3.small-6.columns
                     label(for='html5')
-                        input#html5(type='checkbox')
+                        input#html5(type='checkbox' checked="on")
                         |html5
                     label(for='css3')
-                        input#css3(type='checkbox')
+                        input#css3(type='checkbox' checked="on")
                         |css3
                     label(for='bem')
-                        input#bem(type='checkbox')
+                        input#bem(type='checkbox' checked="on")
                         |бэм
                 fieldset.medium-3.small-6.columns
                     label(for='Sass')
-                        input#Sass(type='checkbox')
+                        input#Sass(type='checkbox' checked="on")
                         |sass
                     label(for='less')
                         input#less(type='checkbox')
@@ -63,18 +63,18 @@ html
                         input#angular(type='checkbox')
                         |angular
                     label(for='jquery')
-                        input#jquery(type='checkbox')
+                        input#jquery(type='checkbox' checked="on")
                         |jquery
 
                 fieldset.medium-3.small-6.columns
                     label(for='git')
-                        input#git(type='checkbox')
+                        input#git(type='checkbox' checked="on")
                         |git
                     label(for='foundation')
-                        input#foundation(type='checkbox')
+                        input#foundation(type='checkbox' checked="on")
                         |foundation
                     label(for='bootstrap')
-                        input#bootstrap(type='checkbox')
+                        input#bootstrap(type='checkbox' checked="on")
                         |bootstrap
             hr.docs-component
             div.row.js-scale
@@ -84,7 +84,7 @@ html
                             img.yellowsec(src="images/yellow-sector.png" alt="yellow")
                             img.greensec(src="images/green-sector.png" alt="green")
                             img.bluesec(src="images/blue-sector.png" alt="blue")
-                            img#div.pointer(src="images/pointer.png" alt="pointer")
+                            img#pointer.pointer(src="images/pointer.png" alt="pointer")
 
 
                     div.medium-6.columns
@@ -93,6 +93,7 @@ html
                         div#counter
 
 
+        include pug/scripts.pug
 
 
 
@@ -108,5 +109,3 @@ html
 
 
 
-
-include pug/scripts.pug
