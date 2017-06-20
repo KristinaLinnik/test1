@@ -24,7 +24,7 @@ $(document).ready(function () {
         var minCount = 900;
         var timerId = setInterval(function () {
             counterContainer.text(minCount);
-            angle += 2;
+            angle += 1.8;
             pointer.style.transform = 'rotate(' + angle + 'deg)';
             if (minCount == maxCount) clearInterval(timerId);
             minCount++;

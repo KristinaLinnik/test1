@@ -17,17 +17,18 @@ html
                 div.small-12.medium-9.columns
                     form(method='POST' action='/register')
                         div.form-group
-                            label#lbl-name(for='name') Кристина
-                            input#name.form-control(type='text', name='name')
+                            label#lbl-name.input-has-text(for='name') Имя:
+                            input#name.form-control(type='text', name='name', value='Кристина')
+                            //|
                         div.form-group
-                            label#lbl-date(for='date') 12.01.1990
-                            input#date.form-control(type='text', name='date')
+                            label#lbl-date.input-has-text(for='date') Дата рождения:
+                            input#date.form-control(type='text', name='date', value='12.01.1990')
                         div.form-group
-                            label#lbl-city(for='city') Бар
-                            input#city.form-control(type='text', name='city')
+                            label#lbl-city.input-has-text(for='city') Город:
+                            input#city.form-control(type='text', name='city', value='Бар')
                         div.form-group
-                            label#lbl-tel(for='tel') +38269616664
-                            input#tel.form-control(type='text', name='tel')
+                            label#lbl-tel.input-has-text(for='tel') Телефон:
+                            input#tel.form-control(type='text', name='tel', value='+38269616664')
                         img.stempel-img(src="images/approved.png" alt="Stempel")
             hr.docs-component
             div.row.skills
