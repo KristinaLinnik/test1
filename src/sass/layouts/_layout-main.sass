@@ -5,9 +5,24 @@ body
 
 .container-wrap
   position: relative
-  width: 662px
+  width: rem-calc(662)
   margin: 60px auto
   background: url("./../images/background.jpg"), no-repeat
+
+  @media screen and (max-width: 39.9375em)
+    width: 100%
+    margin: 0 auto
+  //
+  //@media screen and (min-width: 40em)
+  //  width: 100%
+  //  margin: 0 auto
+
+  //@media screen and (min-width: 40em) and (max-width: 63.9375em)
+  //  width: 100%
+  //  margin: 0 auto
+
+
+
 
 .docs-component
   color: $light-gray

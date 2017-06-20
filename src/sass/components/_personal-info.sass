@@ -1,6 +1,17 @@
 .personal-info
   height: 250px
   padding: rem-calc(30)
+
+  @media screen and (max-width: 39.9375em)
+    padding: rem-calc(6)
+
+  .avatarImg
+    @media screen and (max-width: 39.9375em)
+      padding-left: rem-calc(78)
+      margin-bottom: rem-calc(20)
+
+  form
+    position: relative
   .form-group
     position: relative
 
@@ -15,15 +26,18 @@
     top: -16px
 
   .form-control
-    width: 458px
-    height: 24px
+    width: rem-calc(428)
+    height: rem-calc(24)
     border: none
     border-bottom: 1.6px solid $black
     background: transparent
     box-shadow: none
     color: $black
     padding: 0
-    margin-bottom: 30px
+    margin-bottom: rem-calc(30)
+
+    @media screen and (max-width: 39.9375em)
+      width: 100%
 
     &:hover, &:focus, &:active
       border: none
@@ -34,6 +48,10 @@
   .stempel-img
     position: absolute
     right: 0
-    top: 74px
+    top: rem-calc(40)
+
+    @media screen and (max-width: 39.9375em)
+      top: rem-calc(50)
+      width: 54%
 
 

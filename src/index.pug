@@ -11,10 +11,10 @@ html
         include pug/svg.pug
         div.container-wrap
             div.row.personal-info
-                div.medium-3.columns
+                div.small-12.medium-3.columns
                     img.avatarImg(src="images/avatar.png" alt="Image Title")
 
-                div.medium-9.columns
+                div.small-12.medium-9.columns
                     form(method='POST' action='/register')
                         div.form-group
                             label#lbl-name(for='name') Кристина
@@ -28,13 +28,12 @@ html
                         div.form-group
                             label#lbl-tel(for='tel') +38269616664
                             input#tel.form-control(type='text', name='tel')
-
-                    img.stempel-img(src="images/approved.png" alt="Stempel")
+                        img.stempel-img(src="images/approved.png" alt="Stempel")
             hr.docs-component
             div.row.skills
-                div.medium-12.columns
+                div.small-12.medium-12.columns
                     p Навыки
-                fieldset.medium-3.small-6.columns
+                fieldset.small-6.medium-3.columns
                     label(for='html5')
                         input#html5(type='checkbox' checked="on")
                         |html5
@@ -44,7 +43,7 @@ html
                     label(for='bem')
                         input#bem(type='checkbox' checked="on")
                         |бэм
-                fieldset.medium-3.small-6.columns
+                fieldset.small-6.medium-3.columns
                     label(for='Sass')
                         input#Sass(type='checkbox' checked="on")
                         |sass
@@ -55,7 +54,7 @@ html
                         input#gulp(type='checkbox')
                         |gulp
 
-                fieldset.medium-3.small-6.columns
+                fieldset.small-6.medium-3.columns
                     label(for='vanillajs')
                         input#vanillajs(type='checkbox')
                         |vanillajs
@@ -66,7 +65,7 @@ html
                         input#jquery(type='checkbox' checked="on")
                         |jquery
 
-                fieldset.medium-3.small-6.columns
+                fieldset.small-6.medium-3.columns
                     label(for='git')
                         input#git(type='checkbox' checked="on")
                         |git
@@ -78,8 +77,8 @@ html
                         |bootstrap
             hr.docs-component
             div.row.js-scale
-                div.medium-12.columns
-                    div.medium-6.columns
+                div.small-12.medium-12.columns
+                    div.small-12.medium-6.columns
                         div.indicator-wrap
                             img.yellowsec(src="images/yellow-sector.png" alt="yellow")
                             img.greensec(src="images/green-sector.png" alt="green")
@@ -87,10 +86,13 @@ html
                             img#pointer.pointer(src="images/pointer.png" alt="pointer")
 
 
-                    div.medium-6.columns
+                    div.small-12.medium-6.columns
                         p.my-level Мой уровень владения
-                        span JavaScript
+                        span.my-level JavaScript
                         div#counter
+            hr.docs-component
+
+
 
 
         include pug/scripts.pug

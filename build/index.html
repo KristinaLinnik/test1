@@ -14,8 +14,8 @@
     </div>
     <div class="container-wrap">
       <div class="row personal-info">
-        <div class="medium-3 columns"><img class="avatarImg" src="images/avatar.png" alt="Image Title"></div>
-        <div class="medium-9 columns">
+        <div class="small-12 medium-3 columns"><img class="avatarImg" src="images/avatar.png" alt="Image Title"></div>
+        <div class="small-12 medium-9 columns">
           <form method="POST" action="/register">
             <div class="form-group">
               <label id="lbl-name" for="name">Кристина</label>
@@ -32,16 +32,16 @@
             <div class="form-group">
               <label id="lbl-tel" for="tel">+38269616664</label>
               <input class="form-control" id="tel" type="text" name="tel">
-            </div>
-          </form><img class="stempel-img" src="images/approved.png" alt="Stempel">
+            </div><img class="stempel-img" src="images/approved.png" alt="Stempel">
+          </form>
         </div>
       </div>
       <hr class="docs-component">
       <div class="row skills">
-        <div class="medium-12 columns">
+        <div class="small-12 medium-12 columns">
           <p>Навыки</p>
         </div>
-        <fieldset class="medium-3 small-6 columns">
+        <fieldset class="small-6 medium-3 columns">
           <label for="html5">
             <input id="html5" type="checkbox" checked="on">html5
           </label>
@@ -52,7 +52,7 @@
             <input id="bem" type="checkbox" checked="on">бэм
           </label>
         </fieldset>
-        <fieldset class="medium-3 small-6 columns">
+        <fieldset class="small-6 medium-3 columns">
           <label for="Sass">
             <input id="Sass" type="checkbox" checked="on">sass
           </label>
@@ -63,7 +63,7 @@
             <input id="gulp" type="checkbox">gulp
           </label>
         </fieldset>
-        <fieldset class="medium-3 small-6 columns">
+        <fieldset class="small-6 medium-3 columns">
           <label for="vanillajs">
             <input id="vanillajs" type="checkbox">vanillajs
           </label>
@@ -74,7 +74,7 @@
             <input id="jquery" type="checkbox" checked="on">jquery
           </label>
         </fieldset>
-        <fieldset class="medium-3 small-6 columns">
+        <fieldset class="small-6 medium-3 columns">
           <label for="git">
             <input id="git" type="checkbox" checked="on">git
           </label>
@@ -88,16 +88,17 @@
       </div>
       <hr class="docs-component">
       <div class="row js-scale">
-        <div class="medium-12 columns">
-          <div class="medium-6 columns">
+        <div class="small-12 medium-12 columns">
+          <div class="small-12 medium-6 columns">
             <div class="indicator-wrap"><img class="yellowsec" src="images/yellow-sector.png" alt="yellow"><img class="greensec" src="images/green-sector.png" alt="green"><img class="bluesec" src="images/blue-sector.png" alt="blue"><img class="pointer" id="pointer" src="images/pointer.png" alt="pointer"></div>
           </div>
-          <div class="medium-6 columns">
-            <p class="my-level">Мой уровень владения</p><span>JavaScript</span>
+          <div class="small-12 medium-6 columns">
+            <p class="my-level">Мой уровень владения</p><span class="my-level">JavaScript</span>
             <div id="counter"></div>
           </div>
         </div>
       </div>
+      <hr class="docs-component">
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/vendors.js"></script>

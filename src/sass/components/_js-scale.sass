@@ -2,8 +2,9 @@
   height: 250px
   padding-top: rem-calc(50)
 
+
   .indicator-wrap
-    width: 250px
+    width: rem-calc(250)
     height: 136px
     position: relative
     img
@@ -29,10 +30,16 @@
       transform: rotate(-35deg)
       transition: 1s
 
+    @media screen and (max-width: 39.9375em)
+      margin: 0 auto
+      margin-bottom: rem-calc(28)
+
+
   .my-level
     font-size: 18px
     margin-bottom: 0
-
+  @media screen and (max-width: 39.9375em)
+    text-align: center
 
   #counter
     font-size: 50px
