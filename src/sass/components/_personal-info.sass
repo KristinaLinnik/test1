@@ -21,7 +21,6 @@
   label
     position: absolute
     text-transform: uppercase
-    font-size: $vertical-gutter * 1
     color: $dark-gray
     letter-spacing:  0.10em
 
@@ -41,6 +40,8 @@
 
     @media screen and (max-width: 39.9375em)
       width: 100%
+      margin-bottom: rem-calc(20)
+
 
     &:hover, &:focus, &:active
       border: none
@@ -49,11 +50,13 @@
       box-shadow: none
 
   .stempel-img
+    display: block
     position: absolute
     right: 0
-    top: rem-calc(40)
+    top: rem-calc(30)
 
     @media screen and (max-width: 39.9375em)
-      top: rem-calc(50)
+      top: rem-calc(30)
+      opacity: 0.2
 
 
